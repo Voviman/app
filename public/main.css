@@ -1,0 +1,124 @@
+:root {
+  font-family: 'New Tegomin', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 780px;
+  margin: 80px auto;
+}
+
+.logo {
+ font-size: 100px;
+ text-align: center;
+}
+
+.form {
+ display: flex;
+ margin-top: 50px;
+}
+
+.input {
+  width: 80%;
+  height: 60px;
+  border: none;
+  padding: 20px;
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(137, 117, 177);
+  opacity: 0.5;
+  transition: 0.4s ease-in-out;
+  background-color: black;
+  font-weight: bold;
+
+}
+
+.input:focus {
+  outline: none;
+  opacity: 0.7;
+}
+
+.btn {
+ width: 15%;
+ height: 60px;
+ border: none;
+ font-family: 'New Tegomin', serif;
+ font-size: 20px;
+ background: black;
+ color: white;
+ opacity: 0.7;
+}
+
+.todos {
+  margin-top: 100px;
+  padding: 50px;
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0;
+  background: url('./img/paper.png');
+  background-position: center center;
+  padding: 40px 60px;
+  margin: 30px 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.todo:hover {
+  opacity: 0.7;
+}
+
+.error,
+.success {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error {
+  color: rgb(172, 7, 7);
+}
+
+.success {
+  color: rgb(105, 105, 105);
+}
+
+.delete {
+  text-decoration: none;
+  color: rgb(172, 7, 7);
+  transition: text-decoration 2s ease-in-out;
+}
+
+.delete:hover {
+  text-decoration: line-through;
+}
+
+.done, 
+.undone {
+  text-decoration: none;
+  color: rgb(77, 58, 114);
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+footer {
+  font-size: 30px;
+  text-align: center;
+}
